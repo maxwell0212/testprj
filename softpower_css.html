@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>소프트파워 컴퓨터학원</title>
+	<style>
+		@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+		@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: #fff;
+			font-family: "Jeju Gothic", serif;
+		}
+		a {
+			text-decoration: none;
+		}
+		nav a:link, a:visited {
+			color: #fff;
+		}
+		nav a:active {
+			color:yellow;
+		}
+		h1 {
+			font-size: 2.0em;
+		}
+		h2 { 
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 1.3em;
+			line-height: 2.0;
+		}
+		li {
+			font-size: 1em;
+			line-height: 2.0;
+		}
+		#container {
+			width: 100%;
+		}
+		header {
+			width: 100%;
+			height: 300px;
+			background: url(images/softpower_01.jpg) center no-repeat;
+			background-size: cover;
+			margin: 0;
+		}
+		nav {
+			height: 50px;
+			background: #000;
+		}
+		#main-nav {
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+		}
+		#main-nav li {
+			display: inline-block;
+			color: #fff;
+			font-family: "맑은 고딕", 돋움;
+			font-size: 0.8em;
+			margin: 5px 15px;
+		}
+		section {
+			position: relative;
+			width: 100%;
+			padding: 15px 2% 10px 5%;
+		}
+		#container section:nth-child(odd) {
+			background: #eee;
+		}
+		.page-title {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			padding: 30px 50px;
+		}
+		.page-title h1 {
+			margin-bottom: 30px;
+		}
+		.content {
+			margin: 80px auto 10px;
+			box-sizing: border-box;
+			width: 90%;
+			padding: 20px;
+		}
+		.content ol {
+			margin-top: 20px;
+		}
+		.sub-titles {
+			color: #0094ff;
+			font-weight: 600;
+		}
+		.photo {
+			display: none;
+		}
+		footer {
+			position: relative;
+			width: 100%;
+			height: 100px;
+			background: #000;
+		}
+		footer p {
+			font-family: 'Oleo Script', cursive;
+			font-size: 1.5em;
+			line-height: 50px;
+			color: white;
+			text-align: center;
+		}
+		/* tablet layout */
+		@media screen and (min-width: 768px) {
+			header {
+				height: 400px;
+			}
+			#intro, #course, #choice, #map {
+				box-sizing: border-box;
+				width: 50%;
+				height: 400px;
+				float: left;
+				margin: 0;
+				border:1px dotted #ccc;
+			}
+			/*
+			#course, #map {
+				clear: left;
+			}
+			*/
+			footer {
+				clear: both;
+			}
+		}
+		/* pc - 1000px 이상 * */
+		@media screen and (min-width:1000px){
+			#container {
+				width: 1000px;
+				margin: 0 auto;
+				border: 1px solid #ccc;
+			}
+			header {
+				height: 500px;
+			}
+			#intro, #course, #choice, #map {
+				box-sizing: border-box;
+				width: 100%;
+				height: 420px;
+				clear: both;
+				position: relative;
+				padding: 15px 2% 10px 5%;
+			}
+			.content {
+				margin: 80px auto 10px;
+				width: 90%;
+				padding: 20px;
+			}
+			.photo {
+				width: 50%;
+				display: block;
+			}
+			.text {
+				width: 42%;
+			}
+			.photo > img {
+				width: 100%;
+				max-width: 320px;
+				height: auto;
+				margin-bottom: 30px;
+			}
+			#intro .photo, #choice .photo {
+				float: left;
+				margin-right: 5%;
+			}
+			#intro .text, #choice .text {
+				float: left;
+			}
+			#course .photo, #map .photo {
+				float: right;
+				margin-right: 5%;
+			}
+			#course .text, #map .text {
+				float: left;
+			}
+			footer {
+				clear: both;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<nav>
+				<ul id="main-nav">
+					<li><a href="#intro">학원 소개</a></li>
+					<li><a href="#course">정규 과정</a></li>
+					<li><a href="#choice">이 달의 특강</a></li>
+					<li><a href="#map">오시는 길</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="intro">
+			<div class="page-title">
+				<h1>학원 소개</h1>
+			</div>
+			<div class="content">
+				<div class="photo">
+					<img src="images/softpower_01.jpg" alt="학원소개" width="30%">
+				</div>
+				<div class="text">
+					<p> 수업 시간 : 오후 3시 ~ 밤 10시 </p>
+					<p> 휴무 : 매주 일요일, 국가 공휴일 휴무</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="course">
+			<div class="page-title">
+				<h1>정규 과정</h1>
+			</div>
+			<div class="content">
+				<div class="photo">
+					<img src="images/softpower_01.jpg" alt="파이썬" width="30%" >
+				</div>
+				<div class="text">
+					<h2>파이썬 - 프로그래밍 입문</h2>
+					<ol>
+						<li>프로그래밍이 처음인 학생들을 대상</li>
+						<li>기본 문법을 익히고 기초 프로그래밍을 연습</li>
+						<li>파이썬 활용과정을 위한 선수 과정 </li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<section id="choice">
+			<div class="page-title">
+				<h1>이달의 특강</h1>
+			</div>
+			<div class="content">
+				<div class="photo">
+				<img src="images/softpower_01.jpg" alt="활용" width="30%">
+				</div>
+				<div class="text">
+					<h2>파이썬 - 웹 크롤링</h2>
+					<ol>
+						<li>파이썬 프로그래밍이 가능한 학생 대상</li>
+						<li>필요한 데이터를 웹에서 수집하는 방법을 익혀보자</li>
+						<li>문서 자동화, 데이터 분석 공부에 도움</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<section id="map">
+			<div class="page-title">
+				<h1>오시는 길</h1>
+			</div>
+			<div class="content">
+				<div class="photo">
+					<img src="images/softpower_map.jpg" alt="위치" width="30%">
+				</div>
+				<div class="text">	
+					<p>용인시 기흥구 동백3로 11번길 3</p>
+					<p>용인 에버라인 동백역 1번 출구 앞</p>
+				</div>
+			</div>				
+		</section>
+
+		<footer>
+			<p>Life is too short, you need Python.</p>
+			<p>So, You need Softpower computer academy.</p>
+		</footer>
+	</div>
+</body>
+</html>
